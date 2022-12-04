@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="login-form" action="Reg" method="post">
+      <div class="items" id="name-box">
+        <label for="name" class="titles">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="items" id="id-box">
+        <label for="id" class="titles">ID</label>
+        <input type="text" name="id" id="id" />
+      </div>
+      <div class="items" id="pw-box">
+        <label for="pw" class="titles">Password</label>
+        <input type="password" name="pw" id="pw" />
+      </div>
+      <div class="items" id="gender-box">
+        <label class="titles">Gender</label>
+        <div>
+          <input type="radio" id="male" name="gender" />
+          <label for="male" class="contents">Male</label>
+          <input type="radio" id="female" name="gender" />
+          <label for="female" class="contents">Female</label>
+        </div>
+      </div>
+      <div class="items" id="address-box">
+        <label for="address" class="titles">Adress</label>
+        <select id="address">
+          <option>Seoul</option>
+          <option>Kyeonggi</option>
+          <option>Daejeon</option>
+          <option>Daegu</option>
+          <option>Busan</option>
+        </select>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="items" id="interest-box">
+        <label class="titles">Interest</label>
+        <div>
+          <input type="checkbox" id="food" />
+          <label for="food" class="contents">Food</label>
+          <input type="checkbox" id="excercise" />
+          <label for="excercise" class="contents">Excercise</label>
+          <input type="checkbox" id="develop" />
+          <label for="develop" class="contents">Develop</label>
+          <input type="checkbox" id="travel" />
+          <label for="travel" class="contents">Travel</label>
+        </div>
+      </div>
+      <div class="items" id="introduce-box">
+        <label for="introduce" class="titles">Introduce</label>
+        <textarea id="introduce" rows="5"></textarea>
+      </div>
+      <div class="items" id="submit-box">
+        <input type="submit" value="Sign Up" />
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

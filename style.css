@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import "reset.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f3640;
+  font-size: 16px;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: border-color 0.3s ease-in-out;
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: #273c75;
+}
+
+i {
+  position: absolute;
+  right: 10px;
+}
+
+textarea {
+  padding: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 14px;
+  resize: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #273c75;
+}
+
+#login-form {
+  padding: 0 25px;
+  display: grid;
+  gap: 10px;
+}
+
+#login-form input {
+  border: none;
+  font-size: 18px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+  border-color: #273c75;
+  outline: none;
+}
+
+#login-form input[type="submit"] {
+  background-color: #273c75;
+  color: #f5f6fa;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 15px 60px;
+  border-radius: 10px;
+  box-shadow: 0 5px #192a56;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #314b94;
+}
+
+#login-form input[type="submit"]:focus {
+  transform: translateY(4px);
+  box-shadow: 0 1px #192a56;
+}
+
+#login-form input[type="submit"]:focus-visible {
+  outline: none;
+}
+
+#login-form input[type="radio"] {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: border 0.1s ease-in-out;
+}
+
+#login-form input[type="radio"]:checked {
+  border: 5px solid #273c75;
+}
+
+#login-form input[type="radio"]:focus-visible {
+  outline-offset: 1px;
+  outline: 3px solid #273c75;
+}
+
+#login-form input[type="checkbox"] {
+  vertical-align: text-bottom;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  transition: border 0.1s ease-in-out;
+}
+
+#login-form input[type="checkbox"]:checked {
+  border: 5px solid #273c75;
+}
+
+#login-form input[type="checkbox"]:focus-visible {
+  outline-offset: 1px;
+  outline: 3px solid #273c75;
+}
+
+#address-box {
+  position: relative;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.items:last-child {
+  display: flex;
+  justify-self: center;
+}
+
+.titles {
+  color: #718093;
+}
+
+.contents {
+  margin-right: 3px;
+}
